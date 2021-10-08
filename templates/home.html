@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projet</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="css\style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid bg-danger">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <br><br>
+                    <h1 class="display-4 text-white"><b>Scoring Client</b></h1>
+ 
+
+                </div>
+                <div class="col-md-2">
+                    <img src="data:image/png;base64,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"
+                        alt="">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+
+
+                <form action="/predict" method=post enctype=multipart/form-data>
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1">Example file input</label>
+                        <input type="file" class="form-control-file btn" name="file" value="Submit"
+                            id="exampleFormControlFile1">
+                        <input type=submit value=Predict class="btn btn-warning">
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-8">
+                <div class="card card2">
+                    <div class="card-header">
+                        Description
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Many people struggle to get loans due to insufficient or non-existent credit histories. And,
+                            unfortunately, this population is often taken advantage of by untrustworthy lenders.
+                            Companies like Home Credit strives to broaden financial inclusion for the unbanked
+                            population by providing a positive and safe borrowing experience. In order to make sure this
+                            underserved population has a positive loan experience, Home Credit makes use of a variety of
+                            alternative data (e.g., including telco and transactional information) to predict their
+                            client's repayment abilities. By using various Statistical, Machine Learning and Deep
+                            Learning techniques we unlock the full potential of their data. Doing so will ensure that
+                            clients capable of repayment are not rejected and that loans are given with a principal,
+                            maturity, and repayment calendar that will empower their clients to be successful.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="page-footer bg-danger">
+        <div class="footer-copyright text-center py-3 text-white">© 2021 Copyright FLAT</div>
+    </footer>
+</body>
+
+</html>
