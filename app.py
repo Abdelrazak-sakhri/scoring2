@@ -5,6 +5,7 @@ import numpy as np
 import sklearn
 from flask import Flask, request, render_template
 import dill as pickle
+from xgboost import XGBClassifier
 
 app = Flask(__name__)
 
